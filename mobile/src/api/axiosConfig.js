@@ -7,8 +7,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Platform } from 'react-native';
 
 const getBaseUrl = () => {
-  // Configured precisely for physical device and simulator networking
-  return 'http://10.28.49.196:5000/api'; 
+  // Pointing to Production Render URL
+  return 'https://bug-tracker-8rzb.onrender.com/api'; 
 };
 
 const api = axios.create({

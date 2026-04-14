@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Note: update to production URL later
+  baseURL: 'https://bug-tracker-8rzb.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
