@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Optional custom base styles */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+}
