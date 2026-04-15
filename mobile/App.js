@@ -11,6 +11,8 @@ import ProjectBoardScreen from './src/screens/ProjectBoardScreen';
 import TicketDetailScreen from './src/screens/TicketDetailScreen';
 import { ActivityIndicator, View, Image, Text } from 'react-native';
 
+import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
+
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -44,6 +46,7 @@ const Navigation = () => {
           <>
             <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
+            <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} options={{ headerShown: false }} />
           </>
         ) : (
           <>

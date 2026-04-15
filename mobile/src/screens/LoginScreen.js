@@ -55,6 +55,10 @@ export default function LoginScreen({ navigation }) {
         onChangeText={setPassword}
       />
       
+      <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')} style={{ alignSelf: 'flex-end', marginBottom: 15 }}>
+        <Text style={{ color: '#94a3b8', fontSize: 14 }}>Forgot Password?</Text>
+      </TouchableOpacity>
+      
       <TouchableOpacity style={styles.button} onPress={handleLogin} disabled={isSubmit}>
          {isSubmit ? <ActivityIndicator color="#fff"/> : <Text style={styles.buttonText}>Login</Text>}
       </TouchableOpacity>
