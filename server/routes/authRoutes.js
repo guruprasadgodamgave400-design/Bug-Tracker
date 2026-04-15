@@ -6,7 +6,7 @@ const { protect } = require('../middleware/authMiddleware');
 const router = express.Router();
 
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
+  return jwt.sign({ id }, process.env.JWT_SECRET || 'fallback_secret_key_12345', { expiresIn: '30d' });
 };
 
 router.post('/register', async (req, res) => {
